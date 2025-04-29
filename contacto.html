@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <h1>Contacto</h1>
+
+<form action="/enviar-formulario" method="post">
+  <div>
+    Nombre:
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+
+  <div>
+    Apellidos:
+    <input type="text" id="apellidos" name="apellidos" required>
+  </div>
+
+  <div>
+    Dirección:
+    <input type="text" id="direccion" name="direccion" required>
+  </div>
+
+  <div>
+    Email:
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div>
+    Confirma Email:
+    <input type="email" id="confirma_email" name="confirma_email" required>
+  </div>
+
+  <div>
+    Teléfono:
+    <input type="tel" id="telefono" name="telefono" required>
+  </div>
+
+  <div>
+    Comentarios:
+    <textarea id="comentarios" name="comentarios" required></textarea>
+  </div>
+
+  <div>
+    <input type="submit" value="Enviar">
+  </div>
+</form>
+</body>
+</html>
