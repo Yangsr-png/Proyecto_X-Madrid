@@ -5,28 +5,94 @@
   <title>Cine - X-Madrid</title>
 </head>
 <body>
-        <img src="logo-ocine-xma.png" alt="Logo X-Madrid" width="200">
- 
-      
-  <h1>Cine en X-Madrid</h1>
-  
-  <h2>Horarios</h2>
-  <p>Abierto todos los días desde las 12:00 hasta la 1:00.</p>
-  
-  <h2>Situación</h2>
-  <p>El cine se encuentra en la planta baja del centro comercial X-Madrid, ubicado en Calle Oslo, 53, Alcorcón (Madrid).</p>
-  
-  <h2>Salas</h2>
-  <p>Contamos con 9 salas modernas con sonido Dolby Atmos y butacas reclinables.</p>
-  
-  <h2>Cafetería</h2>
-  <p>Ofrecemos palomitas, refrescos, snacks gourmet y menú vegano. Abierta todo el horario del cine.</p>
-  
-  <h2>Compra de Entradas</h2>
-  <p>
-    <a href="https://www.ocine.es/cines/x-madrid/" target="_blank">
-      <button>Comprar Entradas</button>
-    </a>
-  </p>
+    <!-- Logo -->
+    <img src="logo-ocine-xma.png" alt="Logo X-Madrid" width="200">
+
+    <h1>Cine en X-Madrid</h1>
+
+    <!-- Banner rotativo -->
+    <div>
+        <h2>En pantalla grande:</h2>
+        <img id="banner" src="https://image.tmdb.org/t/p/w500/zjHFJZ91HveA4Zam5N7fx0UuTt1.jpg" width="300" alt="Banner Película">
+    </div>
+
+    <hr>
+
+    <!-- Información general -->
+    <section>
+        <h2>Información general</h2>
+        <p>Salas modernas, sonido Dolby Atmos y más. Consulta la cartelera actualizada abajo.</p>
+    </section>
+
+    <h2>Cartelera</h2>
+    <div class="peliculas" id="cartelera">
+        <h3>Thunderbolts*</h3>
+        <img src="Thunderbolts__poster.jpg" width="200" alt="Thunderbolts"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+
+        <h3>Kayara. La guerrera del imperio Inca</h3>
+        <img src="kayara.webp" width="200" alt="Kayara"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+
+        <h3>Until Dawn</h3>
+        <img src="Until_Dawn_cover_art.jpg" width="200" alt="Until Dawn"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+
+        <h3>El contable 2</h3>
+        <img src="the_accountant_2-296563604-large.jpg" width="200" alt="El Contable 2"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+
+        <h3>Moon, mi amigo panda</h3>
+        <img src="moon.jpeg" width="200" alt="Moon, mi amigo panda"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+
+        <h3>El casoplón</h3>
+        <img src="casoplon.jpeg" width="200" alt="El Casoplón"><br>
+        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
+        <hr>
+    </div>
+
+    <h2>Horarios</h2>
+    <p>Abierto todos los días desde las 12:00 hasta la 1:00.</p>
+
+    <h2>Situación</h2>
+    <p>El cine se encuentra en la planta baja del centro comercial X-Madrid, ubicado en Calle Oslo, 53, Alcorcón (Madrid).</p>
+
+    <h2>Salas</h2>
+    <p>Contamos con 9 salas modernas con sonido Dolby Atmos y butacas reclinables.</p>
+
+    <h2>Cafetería</h2>
+    <p>Ofrecemos palomitas, refrescos, snacks gourmet y menú vegano. Abierta todo el horario del cine.</p>
+
+    <h2>Compra de Entradas</h2>
+    <p>
+        <a href="https://www.ocine.es/cines/x-madrid/" target="_blank">
+            <button>Comprar Entradas</button>
+        </a>
+    </p>
+
+    <!-- Script para rotar banner -->
+    <script>
+      const imagenes = [
+        "thunderbolts__poster.jpg",
+        "kayara.webp", 
+        "Until_Dawn_cover_art.jpg",
+        "the_accountant_2-296563604-large.jpg",
+        "moon.jpeg",
+        "casoplon.jpeg",  
+      ];
+
+      let actual = 0;
+      setInterval(() => {
+        actual = (actual + 1) % imagenes.length;
+        document.getElementById("banner").src = imagenes[actual];
+      }, 3000); 
+    </script>
 </body>
 </html>
+
