@@ -3,95 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <title>Cine - X-Madrid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .pelicula-img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+    .navbar-brand img {
+      width: 150px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Logo -->
-    <img src="logo-ocine-xma.png" alt="Logo X-Madrid" width="200">
 
-    <h1>Cine en X-Madrid</h1>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="logo-ocine-xma.png" alt="Logo X-Madrid"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- Banner rotativo -->
-    <div>
-        <img id="banner" src="https://image.tmdb.org/t/p/w500/zjHFJZ91HveA4Zam5N7fx0UuTt1.jpg" width="300" alt="Banner Película">
+<!-- Banner Carousel -->
+<div id="carouselBanner" class="carousel slide mb-4 container" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Thunderbolts__poster.jpg" class="d-block w-100" alt="Thunderbolts">
     </div>
-
-    <hr>
-
-    <!-- Información general -->
-    <section>
-        <h2>Información general</h2>
-        <p>Salas modernas, sonido Dolby Atmos y más. Consulta la cartelera actualizada abajo.</p>
-    </section>
-
-    <h2>Cartelera</h2>
-    <div class="peliculas" id="cartelera">
-        <h3>Thunderbolts*</h3>
-        <img src="Thunderbolts__poster.jpg" width="200" alt="Thunderbolts"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
-
-        <h3>Kayara. La guerrera del imperio Inca</h3>
-        <img src="kayara.webp" width="200" alt="Kayara"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
-
-        <h3>Until Dawn</h3>
-        <img src="Until_Dawn_cover_art.jpg" width="200" alt="Until Dawn"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
-
-        <h3>El contable 2</h3>
-        <img src="the_accountant_2-296563604-large.jpg" width="200" alt="El Contable 2"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
-
-        <h3>Moon, mi amigo panda</h3>
-        <img src="moon.jpeg" width="200" alt="Moon, mi amigo panda"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
-
-        <h3>El casoplón</h3>
-        <img src="casoplon.jpeg" width="200" alt="El Casoplón"><br>
-        <a href="https://www.ocineurbanxmadrid.es/" target="_blank">Comprar entrada</a>
-        <hr>
+    <div class="carousel-item">
+      <img src="kayara.webp" class="d-block w-100" alt="Kayara">
     </div>
+    <div class="carousel-item">
+      <img src="Until_Dawn_cover_art.jpg" class="d-block w-100" alt="Until Dawn">
+    </div>
+  </div>
+</div>
 
-    <h2>Horarios</h2>
-    <p>Abierto todos los días desde las 12:00 hasta la 1:00.</p>
+<!-- Información general -->
+<section class="container mb-4">
+  <h1 class="mb-3">Cine en X-Madrid <i class="fas fa-film text-danger"></i></h1>
+  <p>Salas modernas, sonido Dolby Atmos, butacas reclinables, y más. Consulta la cartelera abajo.</p>
+</section>
 
-    <h2>Situación</h2>
-    <p>El cine se encuentra en la planta baja del centro comercial X-Madrid, ubicado en Calle Oslo, 53, Alcorcón (Madrid).</p>
+<!-- Cartelera desde JSON -->
+<section class="container mb-5">
+  <h2 class="mb-3">Cartelera</h2>
+  <div class="row" id="cartelera"></div>
+</section>
 
-    <h2>Salas</h2>
-    <p>Contamos con 9 salas modernas con sonido Dolby Atmos y butacas reclinables.</p>
+<!-- Acordeón de información -->
+<div class="container mb-5">
+  <div class="accordion" id="infoAcordeon">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#horarios">
+          <i class="fas fa-clock me-2"></i> Horarios
+        </button>
+      </h2>
+      <div id="horarios" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Abierto todos los días desde las 12:00 hasta la 1:00.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ubicacion">
+          <i class="fas fa-map-marker-alt me-2"></i> Situación
+        </button>
+      </h2>
+      <div id="ubicacion" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Planta baja del centro comercial X-Madrid, Calle Oslo, 53, Alcorcón (Madrid).
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cafeteria">
+          <i class="fas fa-mug-hot me-2"></i> Cafetería
+        </button>
+      </h2>
+      <div id="cafeteria" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Palomitas, refrescos, snacks gourmet y menú vegano. Abierta todo el horario del cine.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <h2>Cafetería</h2>
-    <p>Ofrecemos palomitas, refrescos, snacks gourmet y menú vegano. Abierta todo el horario del cine.</p>
+<!-- Botón de entrada + Modal -->
+<div class="text-center mb-5">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompra">
+    <i class="fas fa-ticket-alt me-2"></i>Comprar Entradas
+  </button>
+</div>
 
-    <h2>Compra de Entradas</h2>
-    <p>
-        <a href="https://www.ocine.es/cines/x-madrid/" target="_blank">
-            <button>Comprar Entradas</button>
+<div class="modal fade" id="modalCompra" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Compra de Entradas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Haz clic para acceder al portal de compra oficial.</p>
+        <a href="https://www.ocine.es/cines/x-madrid/" target="_blank" class="btn btn-success">
+          <i class="fas fa-external-link-alt me-2"></i>Ir al sitio
         </a>
-    </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <!-- Script para rotar banner -->
-    <script>
-      const imagenes = [
-        "thunderbolts__poster.jpg",
-        "kayara.webp", 
-        "Until_Dawn_cover_art.jpg",
-        "the_accountant_2-296563604-large.jpg",
-        "moon.jpeg",
-        "casoplon.jpeg",  
-      ];
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Simulación de carga desde JSON
+  const peliculasJSON = [
+    { titulo: "Thunderbolts*", img: "Thunderbolts__poster.jpg" },
+    { titulo: "Kayara. La guerrera del imperio Inca", img: "kayara.webp" },
+    { titulo: "Until Dawn", img: "Until_Dawn_cover_art.jpg" },
+    { titulo: "El contable 2", img: "the_accountant_2-296563604-large.jpg" },
+    { titulo: "Moon, mi amigo panda", img: "moon.jpeg" },
+    { titulo: "El casoplón", img: "casoplon.jpeg" },
+  ];
 
-      let actual = 0;
-      setInterval(() => {
-        actual = (actual + 1) % imagenes.length;
-        document.getElementById("banner").src = imagenes[actual];
-      }, 3000); 
-    </script>
+  const contenedor = document.getElementById("cartelera");
+
+  peliculasJSON.forEach(pelicula => {
+    const col = document.createElement("div");
+    col.className = "col-12 col-sm-6 col-lg-4 mb-4";
+    col.innerHTML = `
+      <div class="card h-100 shadow-sm">
+        <img src="${pelicula.img}" class="card-img-top pelicula-img" alt="${pelicula.titulo}">
+        <div class="card-body">
+          <h5 class="card-title">${pelicula.titulo}</h5>
+          <a href="https://www.ocineurbanxmadrid.es/" target="_blank" class="btn btn-outline-primary">
+            <i class="fas fa-ticket-alt me-2"></i>Comprar entrada
+          </a>
+        </div>
+      </div>
+    `;
+    contenedor.appendChild(col);
+  });
+</script>
+
 </body>
 </html>
-
