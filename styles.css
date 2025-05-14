@@ -89,6 +89,33 @@ h1{
 
 
 
+.sobre-nosotros-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  list-style: none;
+}
+
+.sobre-nosotros-link .nav-link {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.sobre-nosotros-link .nav-link:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+
+
+
  
 
 
