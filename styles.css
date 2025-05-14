@@ -13,7 +13,7 @@ body {
       background-size: cover;       /* Hace que cubra toda la pantalla */
       background-position: center;  /* Centra la imagen */
       background-repeat: no-repeat; /* Evita que se repita */
-      height: 100vh;                /* Altura de la pantalla completa */
+      height: 100%;                /* Altura de la pantalla completa */
       margin: 0;
 }
 
