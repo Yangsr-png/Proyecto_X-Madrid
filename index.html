@@ -43,43 +43,54 @@
   </header>
 
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">X-Madrid</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tiendas">Tiendas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ocio">Ocio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#restauracion">Restauración</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">X-Madrid</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Sobre Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+        <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
+        <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restauración</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- HERO SECTION -->
   <section id="hero" class="bg-light text-center py-5">
     <div class="container">
-      <h2>Bienvenidos a X-Madrid</h2>
+      <h2><strong>Bienvenidos a X-Madrid</strong></h2>
       <p>Moda, ocio, deporte urbano y gastronomía, todo en un solo lugar.</p>
       <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#promoModal">Ver Promoción</button>
     </div>
   </section>
 
   <!-- SOBRE NOSOTROS -->
-  <section id="sobre" class="container py-5">
-    <h2>Sobre Nosotros</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/feCAqS0lje8?si=ZFCja8PSrVpgtU07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </section>
+<section id="sobre" class="container py-5 text-center">
+  <h2><strong>Sobre Nosotros</strong></h2>
+  <div class="d-flex justify-content-center">
+    <div class="ratio ratio-16x9" style="max-width: 560px;">
+      <iframe src="https://www.youtube.com/embed/feCAqS0lje8?si=ZFCja8PSrVpgtU07" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
 
   <!-- TIENDAS CON CARRUSEL -->
   <section id="tiendas" class="bg-light py-5">
     <div class="container">
-      <h2>Nuestras Tiendas</h2>
+      <h2><strong>Nuestras Tiendas</strong></h2>
       <div id="carouselTiendas" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -107,7 +118,7 @@
 
   <!-- OCIO CON ACORDEÓN -->
   <section id="ocio" class="container py-5">
-    <h2>Ocio y Experiencias</h2>
+    <h2><strong>Ocio y Experiencias</strong></h2>
     <div class="accordion" id="ocioAccordion">
       <div class="accordion-item">
         <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#skate">Skatepark</button></h2>
@@ -127,14 +138,14 @@
   <!-- RESTAURACIÓN -->
   <section id="restauracion" class="bg-light py-5">
     <div class="container">
-      <h2>Restauración</h2>
+      <h2><strong>Restauración</strong></h2>
       <p>Listado de opciones gastronómicas, desde comida rápida hasta cocina gourmet.</p>
     </div>
   </section>
 
   <!-- CONTACTO + MAPA -->
   <section id="contacto" class="container py-5">
-    <h2>Contacto</h2>
+    <h2><strong>Contacto</strong></h2>
     <p><i class="bi bi-geo-alt-fill"></i> Dirección: Calle Oslo, 53, Alcorcón, Madrid</p>
     <p><i class="bi bi-envelope-fill"></i> contacto@xmadrid.es</p>
     <p><i class="bi bi-telephone-fill"></i> +34 910 123 456</p>
