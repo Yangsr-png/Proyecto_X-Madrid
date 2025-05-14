@@ -25,6 +25,30 @@
       height: 150px;
       object-fit: contain;
     }
+
+    .sobre-nosotros-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  list-style: none;
+}
+
+.sobre-nosotros-link .nav-link {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.sobre-nosotros-link .nav-link:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
   </style>
 </head>
 <body>
@@ -32,6 +56,8 @@
 <header>
   <div class="container">
     <h1 class="display-5">Tiendas en X-Madrid</h1>
+    <li class="nav-item sobre-nosotros-link"> <a class="nav-link" href="index.html">Inicio</a>
+</li>
     <p class="lead">Descubre todas las marcas que puedes encontrar en nuestro centro comercial</p>
     <nav>
       <ul class="nav justify-content-center">
