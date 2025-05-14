@@ -49,16 +49,63 @@
   background-color: #0056b3;
   color: #ffffff;
 }
+
+ .navbar-brand img {
+  height: 40px;
+}
+
+nav ul.nav {
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul.nav .nav-link {
+  font-weight: 600;
+  color: #333;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+nav ul.nav .nav-link:hover,
+nav ul.nav .nav-link:focus {
+  background-color: #0d6efd;
+  color: white;
+  text-decoration: none;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
   </style>
 </head>
 <body>
 
-<header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-    <h1 class="display-5">Tiendas en X-Madrid</h1>
-    <li class="nav-item sobre-nosotros-link"> <a class="nav-link" href="index.html">Inicio</a>
-</li>
-    <p class="lead">Descubre todas las marcas que puedes encontrar en nuestro centro comercial</p>
+     <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="tiendas.html">Tiendas</a></li>
+        <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
+        <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restauración</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
+        <li class="nav-item"><a class="nav-link" href="visitanos.html">Visitanos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
     <nav>
       <ul class="nav justify-content-center">
         <li class="nav-item"><a class="nav-link" href="#moda">Moda</a></li>
@@ -68,7 +115,7 @@
       </ul>
     </nav>
   </div>
-</header>
+
 
 <main class="container py-5">
 
