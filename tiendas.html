@@ -62,7 +62,7 @@ nav ul.nav {
 
 nav ul.nav .nav-link {
   font-weight: 600;
-  color: #333;
+  color: white;
   margin: 0 1rem;
   padding: 0.5rem 1rem;
   border-radius: 30px;
@@ -79,9 +79,23 @@ nav ul.nav .nav-link:focus {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
+.oci{
+ background-image: url('bolerea.jpeg');
+      background-size: cover;         
+      background-position: center;   
+      background-repeat: no-repeat;   
+      height: 100vh;                
+      margin: 0;
+}
+
+h5{
+  color: white;
+}
+
+
   </style>
 </head>
-<body>
+<body class="oci">
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -109,134 +123,123 @@ nav ul.nav .nav-link:focus {
 
     <nav>
       <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#moda">Moda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#deporte">Deporte</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tecnologia">Tecnología</a></li>
-        <li class="nav-item"><a class="nav-link" href="#belleza">Belleza</a></li>
+        <li class="nav-item"><a class="nav-link" href="#1">Moda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#2">Motor</a></li>
+        <li class="nav-item"><a class="nav-link" href="#3">Belleza</a></li>
       </ul>
     </nav>
   </div>
-
+<p id="1"></p>
 
 <main class="container py-5">
 
+
+<h5><strong>MODA</strong></h5>
+
+<br>
   <!-- MODA -->
-  <section id="moda" class="mb-5">
-    <h2><i class="bi bi-bag-fill"></i> <strong> Moda</strong></h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100 text-center">
-          <img src="zara.png" alt="Zara logo" class="store-logo card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Zara</strong></h5>
-            <p class="card-text">Moda internacional para mujer, hombre y niños.</p>
-            <a href="https://www.zara.com" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 text-center">
-          <img src="stradivarius.png" alt="Stradivarius logo" class="store-logo card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Stradivarius</strong></h5>
-            <p class="card-text">Moda femenina joven. Parte del grupo Inditex.</p>
-            <a href="https://www.stradivarius.com" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100 text-center">
-          <img src="berska.png" alt="Bershka logo" class="store-logo card-img-top">
-          <div class="card-body">
-            <h5 class="card-title"><strong>Bershka</strong></h5>
-            <p class="card-text">Tendencias urbanas y moda juvenil.</p>
-            <a href="https://www.bershka.com" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-          </div>
+   
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="zara.png" data-bs-toggle="modal" data-bs-target="#zara" class="card-img-top p-3" alt="Zara" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Zara</h5>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- DEPORTE (Acordeón) -->
-  <section id="deporte" class="mb-5">
-    <h2><i class="bi bi-bicycle"></i><strong> Deporte y Aventura</strong></h2>
-    <div class="accordion" id="deporteAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#decathlon">Decathlon</button></h2>
-        <div id="decathlon" class="accordion-collapse collapse show" data-bs-parent="#deporteAccordion">
-          <div class="accordion-body text-center">
-            <img src="decathlonpng.png" alt="Decathlon logo" class="store-logo mb-3">
-            <p>Equipamiento deportivo para todos los niveles.</p>
-            <a href="https://www.decathlon.es" target="_blank" class="btn btn-outline-primary">Visitar sitio web</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#salomon">Salomon</button></h2>
-        <div id="salomon" class="accordion-collapse collapse" data-bs-parent="#deporteAccordion">
-          <div class="accordion-body text-center">
-            <img src="salomon.png" alt="Salomon logo" class="store-logo mb-3">
-            <p>Equipamiento para trail, montaña y esquí.</p>
-            <a href="https://www.salomon.com" target="_blank" class="btn btn-outline-primary">Visitar sitio web</a>
-          </div>
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="rituals.png" data-bs-toggle="modal" data-bs-target="#rituals" class="card-img-top p-3" alt="Rituals" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Rituals</h5>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- TECNOLOGÍA (Carousel) -->
-  <section id="tecnologia" class="mb-5">
-    <h2><i class="bi bi-cpu-fill"></i><strong> Tecnología</strong></h2>
-    <div id="carouselTecnologia" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner text-center">
-        <div class="carousel-item active">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Xiaomi_logo.svg" alt="Xiaomi logo" class="store-logo d-block mx-auto mb-3">
-          <p>Smartphones y domótica a buen precio.</p>
-          <a href="https://www.mi.com/es/" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-        </div>
-        <div class="carousel-item">
-          <img src="mediamarkt.png" alt="MediaMarkt logo" class="store-logo d-block mx-auto mb-3">
-          <p>Electrodomésticos, informática y más.</p>
-          <a href="https://www.mediamarkt.es" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="kiko.png" data-bs-toggle="modal" data-bs-target="#kiko" class="card-img-top p-3" alt="Kiko Milano" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Kiko Milano</h5>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecnologia" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselTecnologia" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </section>
+  </div>
+
+    <p id="2"></p>
+<br>
+<br>
+  <!-- MOTOR -->
+ 
+<h5><strong>MOTOR</strong></h5>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="harley.png" data-bs-toggle="modal" data-bs-target="#harley" class="card-img-top p-3" alt="Harley" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Harley</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="byd.png" data-bs-toggle="modal" data-bs-target="#byd" class="card-img-top p-3" alt="ByD" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">ByD</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="ducati.png" data-bs-toggle="modal" data-bs-target="#ducati" class="card-img-top p-3" alt="Ducati" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Ducati</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- BELLEZA -->
-  <section id="belleza" class="mb-5">
-    <h2><i class="bi bi-heart-fill"></i> <strong>Belleza y Cuidado Personal</strong></h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card text-center h-100">
-          <img src="rituals.png" alt="Rituals logo" class="store-logo card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Rituals</h5>
-            <p>Cosmética de inspiración oriental.</p>
-            <a href="https://www.rituals.com" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card text-center h-100">
-          <img src="kiko.png" alt="Kiko Milano logo" class="store-logo card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Kiko Milano</h5>
-            <p>Maquillaje profesional italiano.</p>
-            <a href="https://www.kikocosmetics.com" target="_blank" class="btn btn-outline-dark">Visitar sitio web</a>
-          </div>
+<p id="3"></p>
+  <br>
+  <br>
+
+  
+<h5><strong>BELLEZA</strong></h5>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="druni.png" data-bs-toggle="modal" data-bs-target="#druni" class="card-img-top p-3" alt="Druni" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Druni</h5>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="lases.png" data-bs-toggle="modal" data-bs-target="#lashes" class="card-img-top p-3" alt="Lashes & Go" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Lashes & Go</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="kenko.png" data-bs-toggle="modal" data-bs-target="#kenko" class="card-img-top p-3" alt="Kenko" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">Kenko</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </main>
 
@@ -270,3 +273,140 @@ nav ul.nav .nav-link:focus {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+<!-- Modals -->
+
+<!--Zara-->
+
+<div class="modal fade" id="zara" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Zara</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="zara2.jpg" class="img-fluid mb-3" alt="Zara"/>
+          <p>Descubre la nueva colección de ZARA online. Las últimas tendencias para mujer, hombre, niños y los editoriales de la próxima temporada..</p>
+          <a href="https://www.zara.com/es/" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Rituals-->
+
+<div class="modal fade" id="rituals" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Rituals</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="rituals2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Disfruta Del Lujo De Las Tradiciones Ancestrales Gracias a Nuestras Colecciones Exclusivas. Rituals: Cuidado Facial Innovador...</p>
+          <a href="https://www.rituals.com/es-es/home#new" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Kiko Milano-->
+
+<div class="modal fade" id="kiko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Kiko</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="kiko2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Ensalza tu belleza con los productos KIKO para rostro, ojos, labios, manos y uñas. </p>
+          <a href="https://www.kikocosmetics.com/es-es/" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Kiko Milano-->
+
+<div class="modal fade" id="kiko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Kiko Milano</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="kiko2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Ensalza tu belleza con los productos KIKO para rostro, ojos, labios, manos y uñas. </p>
+          <a href="https://www.kikocosmetics.com/es-es/" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Harley-->
+
+
+
+<div class="modal fade" id="harley" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Harley-Davidson</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="harley2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>TU HARLEY, TU LIENZO EN BLANCO. Personaliza tu moto con piezas y accesorios que hagan realidad tus sueños. </p>
+          <a href="https://www.harley-davidson.com" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--ByD-->
+
+<div class="modal fade" id="byd" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">ByD</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="byd2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>BYD deslumbra con nuevos SUV, híbridos y eléctricos de DENZA, YANGWANG y FANGCHENGBAO, junto a innovaciones como drones y Super DM.. </p>
+          <a href="https://www.byd.com/es-es/promociones/byd-plan-moves-2025?cid=Google|GoogleSearch|BYDESAlwaysOnLeadGenSearch2025|MULTI&mktcode=ESA03051165&gad_source=1&gad_campaignid=21813330366&gbraid=0AAAAAqTdU0YFtaJHKbRjfiYoBYQtdFLKt&gclid=CjwKCAjw_pDBBhBMEiwAmY02Nn4FfCOYHnd-_3bqClRPre28rYLQeE8b46WTMReVhzjXtb2ACMLgzhoC0iQQAvD_BwE" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!--Ducati-->
+
+<div class="modal fade" id="ducati" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Ducati</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="ducati2.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Elige la Ducati perfecta para ti. Configúrala según tu estilo </p>
+          <a href="https://www.ducati.com/es/es/home?utm_source=google&utm_medium=paid-search&utm_campaign=ES_Ducati_Range_AWON_GoogleSearch_LOW_PureBrand_CONV_PHD202501998976&utm_source=google&utm_medium=paid-search&utm_content=ducati&utm:campaign=ES-Ducati-PureBrand-Range-AWON-PHD202501998976&gad_source=1&gad_campaignid=21163846942&gbraid=0AAAAADPmJghXV2KDJiyZU2G_iebxQi0OC&gclid=CjwKCAjw_pDBBhBMEiwAmY02Ng4m0kngr4u_71kyC2o-u-EoMsPo_QN2S8xgh9iW6k6aBa__ad2cThoCGvYQAvD_BwE" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
