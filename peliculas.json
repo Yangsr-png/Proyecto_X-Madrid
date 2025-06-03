@@ -1,0 +1,80 @@
+[
+  {
+    "titulo": "Thunderbolts*",
+    "img": "Thunderbolts__poster.jpg",
+    "horarios": "12:00 - 15:00 - 18:00 - 21:00",
+    "localizacion": "Sala 1, Planta baja",
+    "duracion": "94'",
+    "director": "David Yarovesky",
+    "actores": "Anthony Hopkins, Bill Skarsgård, Ashley Cartwright",
+    "clasificacion": "16 años",
+    "genero": "Thriller",
+    "sinopsis": "Cuando Eddie se cuela en un todoterreno de lujo para robarlo, cae en una trampa mortal tendida por William, el dueño del vehículo que ha decidido tomar la justicia por su mano y controla remotamente el vehículo. Sin posibilidad de escape, Eddie debe luchar por sobrevivir esta venganza mortal.",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/thunderbolts"
+  },
+  {
+    "titulo": "Kayara. La guerrera del imperio Inca",
+    "img": "kayara.webp",
+    "horarios": "13:00 - 16:00 - 19:00 - 22:00",
+    "localizacion": "Sala 2, Planta baja",
+    "duracion": "102'",
+    "director": "César Zelada",
+    "actores": "Voces en español latino",
+    "clasificacion": "7 años",
+    "genero": "Animación / Aventura",
+    "sinopsis": "Kayara, una valiente joven del imperio incaico, desafía las normas de su época para convertirse en chasqui (mensajera oficial). Su viaje la lleva a descubrir secretos antiguos y a luchar por la igualdad.",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/kayara"
+  },
+  {
+    "titulo": "Until Dawn",
+    "img": "Until_Dawn_cover_art.jpg",
+    "horarios": "14:00 - 17:00 - 20:00 - 23:00",
+    "localizacion": "Sala 3, Planta 1",
+    "duracion": "108'",
+    "director": "David Cage",
+    "actores": "Rami Malek, Hayden Panettiere, Brett Dalton",
+    "clasificacion": "18 años",
+    "genero": "Terror / Suspenso",
+    "sinopsis": "Un grupo de jóvenes visita una cabaña en la montaña donde un asesino enmascarado los acecha. Las decisiones que tomen marcarán quién vive... y quién no.",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/untildawn"
+  },
+  {
+    "titulo": "El contable 2",
+    "img": "the_accountant_2-296563604-large.jpg",
+    "horarios": "12:30 - 15:30 - 18:30 - 21:30",
+    "localizacion": "Sala 4, Planta 1",
+    "duracion": "120'",
+    "director": "Gavin O'Connor",
+    "actores": "Ben Affleck, Anna Kendrick, Jon Bernthal",
+    "clasificacion": "16 años",
+    "genero": "Acción / Thriller",
+    "sinopsis": "Christian Wolff regresa para enfrentarse a un nuevo caso que lo obligará a desenterrar secretos de su pasado. Un thriller de inteligencia y acción al límite.",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/contable2"
+  },
+  {
+    "titulo": "Moon, mi amigo panda",
+    "img": "moon.jpeg",
+    "horarios": "11:00 - 14:00 - 17:00 - 20:00",
+    "localizacion": "Sala 5, Planta 2",
+    "duracion": "88'",
+    "director": "Kara Holden",
+    "actores": "Voces infantiles (doblaje)",
+    "clasificacion": "Apta para todos los públicos",
+    "genero": "Animación / Familiar",
+    "sinopsis": "Una niña huérfana conoce a un panda mágico llamado Moon, con quien vivirá una aventura para salvar el bosque encantado de la amenaza humana.",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/moon"
+  },
+  {
+    "titulo": "El casoplón",
+    "img": "casoplon.jpeg",
+    "horarios": "13:30 - 16:30 - 19:30 - 22:30",
+    "localizacion": "Sala 6, Planta 2",
+    "duracion": "97'",
+    "director": "Álvaro Díaz Lorenzo",
+    "actores": "Joaquín Reyes, Silvia Abril, Carlos Areces",
+    "clasificacion": "12 años",
+    "genero": "Comedia",
+    "sinopsis": "Un grupo de amigos gana una mansión en un concurso de televisión, pero vivir allí no será tan fácil como parecía. ¡Caos y risas aseguradas!",
+    "linkCompra": "https://www.ocineurbanxmadrid.es/comprar/casoplon"
+  }
+]

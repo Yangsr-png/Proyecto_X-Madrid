@@ -7,27 +7,22 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="shortcut icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
       font-family: 'Roboto', sans-serif;
     }
-        header {
+
+    header {
       background: #222;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
 
-    /* Cartelera: mostrar toda la imagen */
     .pelicula-img {
       width: 100%;
       height: 300px;
@@ -35,18 +30,15 @@
       background-color: #f8f9fa;
     }
 
-    /* Carousel: mostrar toda la imagen */
     .carousel-item img {
       height: 500px;
       object-fit: contain;
-        width: 60%;
+      width: 60%;
     }
 
-  
-
     .navbar-brand img {
-  height: 40px;
-}
+      height: 40px;
+    }
   </style>
 </head>
 <body>
@@ -65,113 +57,53 @@
         <li class="nav-item"><a class="nav-link" href="ocio.html">Ocio</a></li>
         <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
-        <li class="nav-item"><a class="nav-link" href="visitanos.html">Visitanos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="cine.html">Cine</a></li>
+        <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
         <li class="nav-item"><a class="nav-link" href="avisoLegal.html">Aviso Legal</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<br>
-<br>
 
-<!-- Banner Carousel -->
+<!-- Carousel -->
 <div id="carouselBanner" class="carousel slide mb-4 container" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="Thunderbolts__poster.jpg" class="d-block w-100" alt="Thunderbolts">
-    </div>
-    <div class="carousel-item">
-      <img src="kayara.webp" class="d-block w-100" alt="Kayara">
-    </div>
-    <div class="carousel-item">
-      <img src="Until_Dawn_cover_art.jpg" class="d-block w-100" alt="Until Dawn">
-    </div>
-       <div class="carousel-item">
-      <img src="the_accountant_2-296563604-large.jpg" class="d-block w-100" alt="El contable 2">
-    </div>
-           <div class="carousel-item">
-      <img src="moon.jpeg" class="d-block w-100" alt="Moon, mi amigo panda">
-    </div>
-           <div class="carousel-item">
-      <img src="casoplon.jpeg"  class="d-block w-100" alt="El casoplón">
-    </div>
+    <div class="carousel-item active"><img src="Thunderbolts__poster.jpg" class="d-block w-100" alt="Thunderbolts"></div>
+    <div class="carousel-item"><img src="kayara.webp" class="d-block w-100" alt="Kayara"></div>
+    <div class="carousel-item"><img src="Until_Dawn_cover_art.jpg" class="d-block w-100" alt="Until Dawn"></div>
+    <div class="carousel-item"><img src="the_accountant_2-296563604-large.jpg" class="d-block w-100" alt="El contable 2"></div>
+    <div class="carousel-item"><img src="moon.jpeg" class="d-block w-100" alt="Moon, mi amigo panda"></div>
+    <div class="carousel-item"><img src="casoplon.jpeg" class="d-block w-100" alt="El casoplón"></div>
   </div>
 </div>
 
-<!-- Información general -->
+<!-- Info -->
 <section class="container mb-4">
   <h1 class="mb-3">Cine en X-Madrid <i class="fas fa-film text-danger"></i></h1>
-  <p>Salas modernas, sonido Dolby Atmos, butacas reclinables, y más. Consulta la cartelera abajo.</p>
+  <p>Salas modernas, sonido Dolby Atmos, butacas reclinables y más. Consulta la cartelera abajo.</p>
 </section>
 
-<!-- Cartelera desde JSON -->
+<!-- Cartelera -->
 <section class="container mb-5">
   <h2 class="mb-3">Cartelera</h2>
   <div class="row" id="cartelera"></div>
 </section>
 
-<!-- Acordeón de información -->
-<div class="container mb-5">
-  <div class="accordion" id="infoAcordeon">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#horarios">
-          <i class="fas fa-clock me-2"></i> Horarios
-        </button>
-      </h2>
-      <div id="horarios" class="accordion-collapse collapse show">
-        <div class="accordion-body">
-          Abierto todos los días desde las 12:00 hasta la 1:00.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ubicacion">
-          <i class="fas fa-map-marker-alt me-2"></i> Localización
-        </button>
-      </h2>
-      <div id="ubicacion" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          Planta baja del centro comercial X-Madrid, Calle Oslo, 53, Alcorcón (Madrid).
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cafeteria">
-          <i class="fas fa-mug-hot me-2"></i> Cafetería
-        </button>
-      </h2>
-      <div id="cafeteria" class="accordion-collapse collapse">
-        <div class="accordion-body">
-          Palomitas, refrescos, snacks gourmet y menú vegano. Abierta todo el horario del cine.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Botón de entrada + Modal -->
-<div class="text-center mb-5">
-  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCompra">
-    <i class="fas fa-ticket-alt me-2"></i>Comprar Entradas
-  </button>
-</div>
-
-<div class="modal fade" id="modalCompra" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+<!-- Modal info -->
+<div class="modal fade" id="modalInfo" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Compra de Entradas</h5>
+        <h5 class="modal-title" id="modalTitulo"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
-      <div class="modal-body text-center">
-        <p>Haz clic para acceder al portal de compra oficial.</p>
-        <a href="https://www.ocine.es/cines/x-madrid/" target="_blank" class="btn btn-success">
-          <i class="fas fa-external-link-alt me-2"></i>Ir al sitio
-        </a>
+      <div class="modal-body">
+        <p id="modalSinopsis"></p>
+        <p><strong>Duración:</strong> <span id="modalDuracion"></span></p>
+        <p><strong>Director:</strong> <span id="modalDirector"></span></p>
+        <p><strong>Actores:</strong> <span id="modalActores"></span></p>
+        <p><strong>Clasificación:</strong> <span id="modalClasificacion"></span></p>
+        <p><strong>Género:</strong> <span id="modalGenero"></span></p>
       </div>
     </div>
   </div>
@@ -180,34 +112,55 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  // Simulación de carga desde JSON
-  const peliculasJSON = [
-    { titulo: "Thunderbolts*", img: "Thunderbolts__poster.jpg" },
-    { titulo: "Kayara. La guerrera del imperio Inca", img: "kayara.webp" },
-    { titulo: "Until Dawn", img: "Until_Dawn_cover_art.jpg" },
-    { titulo: "El contable 2", img: "the_accountant_2-296563604-large.jpg" },
-    { titulo: "Moon, mi amigo panda", img: "moon.jpeg" },
-    { titulo: "El casoplón", img: "casoplon.jpeg" },
-  ];
+let peliculas = [];
 
-  const contenedor = document.getElementById("cartelera");
+fetch('peliculas.json')
+  .then(res => res.json())
+  .then(data => {
+    peliculas = data;
+    const contenedor = document.getElementById("cartelera");
 
-  peliculasJSON.forEach(pelicula => {
-    const col = document.createElement("div");
-    col.className = "col-12 col-sm-6 col-lg-4 mb-4";
-    col.innerHTML = `
-      <div class="card h-100 shadow-sm">
-        <img src="${pelicula.img}" class="card-img-top pelicula-img" alt="${pelicula.titulo}">
-        <div class="card-body">
-          <h5 class="card-title">${pelicula.titulo}</h5>
-          <a href="https://www.ocineurbanxmadrid.es/" target="_blank" class="btn btn-outline-primary">
-            <i class="fas fa-ticket-alt me-2"></i>Comprar entrada
-          </a>
+    data.forEach((pelicula, index) => {
+      const col = document.createElement("div");
+      col.className = "col-12 col-sm-6 col-lg-4 mb-4";
+      col.innerHTML = `
+        <div class="card h-100 shadow-sm">
+          <img src="${pelicula.img}" class="card-img-top pelicula-img" alt="${pelicula.titulo}">
+          <div class="card-body">
+            <h5 class="card-title">${pelicula.titulo}</h5>
+            <p><strong>Horarios:</strong> ${pelicula.horarios}</p>
+            <p><strong>Localización:</strong> ${pelicula.localizacion}</p>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-info" onclick="abrirModal(${index})">
+                <i class="fas fa-info-circle me-1"></i>Más info
+              </button>
+              <a href="${pelicula.linkCompra}" target="_blank" class="btn btn-outline-primary">
+                <i class="fas fa-ticket-alt me-1"></i>Entradas
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    `;
-    contenedor.appendChild(col);
+      `;
+      contenedor.appendChild(col);
+    });
+  })
+  .catch(error => {
+    console.error("Error cargando cartelera:", error);
+    document.getElementById("cartelera").innerHTML = '<p class="text-danger">No se pudo cargar la cartelera.</p>';
   });
+
+function abrirModal(index) {
+  const p = peliculas[index];
+  document.getElementById("modalTitulo").textContent = p.titulo;
+  document.getElementById("modalSinopsis").textContent = p.sinopsis;
+  document.getElementById("modalDuracion").textContent = p.duracion;
+  document.getElementById("modalDirector").textContent = p.director;
+  document.getElementById("modalActores").textContent = p.actores;
+  document.getElementById("modalClasificacion").textContent = p.clasificacion;
+  document.getElementById("modalGenero").textContent = p.genero;
+  const modal = new bootstrap.Modal(document.getElementById('modalInfo'));
+  modal.show();
+}
 </script>
 
 </body>

@@ -8,20 +8,31 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Merriweather&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="shortcut icon" href="logo.png">
-<style>
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', Arial, sans-serif;
+    }
+    h2, h1, h3, h4, h5, h6 {
+      font-family: 'Merriweather', Georgia, serif;
+    }
     .navbar-brand img {
-  height: 40px;
-}
-</style>
+      height: 40px;
+    }
+    .mapa-container iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -35,133 +46,77 @@
         <li class="nav-item"><a class="nav-link" href="restaurantes.html">Restaurantes</a></li>
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         <li class="nav-item"><a class="nav-link" href="cine.html">Cine</a></li>
-        <li class="nav-item"><a class="nav-link" href="visitanos.html">Visitanos</a> </li>
+        <li class="nav-item"><a class="nav-link" href="visitanos.html">Visítanos</a></li>
         <li class="nav-item"><a class="nav-link" href="avisoLegal.html">Aviso Legal</a></li>
       </ul>
     </div>
   </div>
 </nav>
-<br>
-<br>
-<br>
 
+<main class="container my-5">
 
-  <main class="container">
+  <h2 class="text-center"><i class="fas fa-map me-2"></i> Ubicación en el mapa</h2>
+  <div class="mapa-container mb-4">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3036.4323524207957!2d-3.8312444843311687!3d40.342798079370746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418d4c3e8d7309%3A0x90e97beccf25c54!2sX-Madrid!5e0!3m2!1ses!2ses!4v1685472139030!5m2!1ses!2ses"
+      loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 
-    <!-- Acordeón de info -->
-    <div class="accordion mb-4" id="info">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#horarios">
-            <i class="fas fa-clock me-2"></i> Horarios
-          </button>
-        </h2>
-        <div id="horarios" class="accordion-collapse collapse show">
-          <div class="accordion-body">
-            <p><strong>Tiendas:</strong> Lunes a domingo, de 10:00 a 22:00<br>
-              <strong>Restauración y ocio:</strong> Hasta la 1:00</p>
-          </div>
-        </div>
-      </div>
+  <div class="text-center mb-5">
+    <a href="https://x-madrid.com/plano" target="_blank" class="btn btn-primary">
+      <i class="fas fa-map-location me-2"></i> Ver Plano Interactivo
+    </a>
+  </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#direccion">
-            <i class="fas fa-map-marker-alt me-2"></i> Dirección
-          </button>
-        </h2>
-        <div id="direccion" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            Calle Oslo, 53, 28922 Alcorcón, Madrid
-          </div>
-        </div>
-      </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-clock me-2"></i> Horarios</h2>
+    <p><strong>Tiendas:</strong> Lunes a domingo, de 10:00 a 22:00<br>
+    <strong>Restauración y ocio:</strong> Hasta la 1:00</p>
+  </section>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#contacto">
-            <i class="fas fa-envelope me-2"></i> Contacto
-          </button>
-        </h2>
-        <div id="contacto" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            Email: info@x-madrid.com<br>
-            Teléfono: +34 912 345 678
-          </div>
-        </div>
-      </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-map-marker-alt me-2"></i> Dirección</h2>
+    <p>Calle Oslo, 53, 28922 Alcorcón, Madrid</p>
+  </section>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#transporte">
-            <i class="fas fa-bus me-2"></i> Transporte Público
-          </button>
-        </h2>
-        <div id="transporte" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            <ul>
-              <li><strong>Metro:</strong> Línea 12 – Estación "Parque Oeste"</li>
-              <li><strong>Cercanías:</strong> Línea C5 – Estación "Alcorcón Central"</li>
-              <li><strong>Autobuses:</strong> Líneas 1, 2, 516, 520, 522</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-envelope me-2"></i> Contacto</h2>
+    <p>Email: info@x-madrid.com<br>
+    Teléfono: +34 912 345 678</p>
+  </section>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#parking">
-            <i class="fas fa-car me-2"></i> Aparcamiento
-          </button>
-        </h2>
-        <div id="parking" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            Parking gratuito con más de 1.800 plazas, incluyendo espacios para movilidad reducida, motos y bicicletas.
-          </div>
-        </div>
-      </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-bus me-2"></i> Transporte Público</h2>
+    <ul>
+      <li><strong>Metro:</strong> Línea 12 – Estación "Parque Oeste"</li>
+      <li><strong>Cercanías:</strong> Línea C5 – Estación "Alcorcón Central"</li>
+      <li><strong>Autobuses:</strong> Líneas 1, 2, 516, 520, 522</li>
+    </ul>
+  </section>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#servicios">
-            <i class="fas fa-concierge-bell me-2"></i> Servicios Comunes
-          </button>
-        </h2>
-        <div id="servicios" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            <ul>
-              <li>WiFi gratuito</li>
-              <li>Guardería con personal cualificado</li>
-              <li>Puntos de carga para vehículos eléctricos</li>
-              <li>Zonas de descanso con sofás y USB</li>
-              <li>Consigna de objetos</li>
-              <li>Fuentes de agua</li>
-              <li>Áreas pet-friendly</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-car me-2"></i> Aparcamiento</h2>
+    <p>Parking gratuito con más de 1.800 plazas, incluyendo espacios para movilidad reducida, motos y bicicletas.</p>
+  </section>
 
-    <!-- Mapa -->
-    <h2 class="text-center"><i class="fas fa-map me-2"></i>Ubicación en el mapa</h2>
-    <div class="mb-4">
-      <iframe class="mapa"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4323524207957!2d-3.8312444843311687!3d40.342798079370746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418d4c3e8d7309%3A0x90e97beccf25c54!2sX-Madrid!5e0!3m2!1ses!2ses!4v1685472139030!5m2!1ses!2ses"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+  <section class="mb-4">
+    <h2><i class="fas fa-concierge-bell me-2"></i> Servicios Comunes</h2>
+    <ul>
+      <li>WiFi gratuito</li>
+      <li>Guardería con personal cualificado</li>
+      <li>Puntos de carga para vehículos eléctricos</li>
+      <li>Zonas de descanso con sofás y USB</li>
+      <li>Consigna de objetos</li>
+      <li>Fuentes de agua</li>
+      <li>Áreas pet-friendly</li>
+    </ul>
+  </section>
 
-    <!-- Botón plano -->
-    <div class="text-center mb-5">
-      <a href="https://x-madrid.com/plano" target="_blank" class="btn btn-primary">
-        <i class="fas fa-map-location me-2"></i> Ver Plano Interactivo
-      </a>
-    </div>
+</main>
 
-  </main>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
