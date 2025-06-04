@@ -78,10 +78,24 @@ h1{
   border-radius: 1rem;
 }
 
+.modal-body img {
+  display: block;            /* Para que funcione margin auto */
+  margin: 0 auto 20px auto;  /* Centrado horizontal y espacio abajo */
+  width: 400px;              /* Tamaño fijo (puedes ajustar) */
+  height: auto;              /* Mantiene proporción */
+  max-width: 100%;           /* Evita que se salga del modal en pantallas pequeñas */
+}
+
+
 /* Imágenes */
 .card-img-top {
   border-radius: 1rem 1rem 0 0;
   background-color: white;
+  
+}
+
+.card-img-top:hover{
+  cursor: pointer;
 }
 
 
@@ -90,33 +104,28 @@ h1{
 
 
 
+.sobre-nosotros-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  list-style: none;
+}
 
+.sobre-nosotros-link .nav-link {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
 
+.sobre-nosotros-link .nav-link:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
 
- 
-
-
-
-
-
-
-
- /* .carousel-img {
-    height: 400px;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 12px;
-  }
-
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #007bff; /* Color azul Bootstrap, cámbialo si quieres otro 
-    border-radius: 50%;
-    padding: 10px;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%;
-  }  */
 
