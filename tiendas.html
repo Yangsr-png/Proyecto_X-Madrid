@@ -11,6 +11,16 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      /* Propiedades para la imagen de fondo a pantalla completa */
+      background-image: url('bolerea.jpeg');
+      background-size: cover; /* Asegura que la imagen cubra todo el elemento */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+      min-height: 100vh; /* Asegura que el body ocupe al menos el 100% del alto de la ventana */
+      margin: 0; /* Elimina el margen predeterminado del body */
+      display: flex; /* Para asegurar que el contenido dentro del body no empuje el fondo */
+      flex-direction: column; /* Organiza el contenido en columna */
     }
     header, footer {
       background-color: #f8f9fa;
@@ -27,80 +37,73 @@
     }
 
     .sobre-nosotros-link {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-  list-style: none;
-}
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      list-style: none;
+    }
 
-.sobre-nosotros-link .nav-link {
-  background-color: grey;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s ease;
-}
+    .sobre-nosotros-link .nav-link {
+      background-color: grey;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
 
-.sobre-nosotros-link .nav-link:hover {
-  background-color: #0056b3;
-  color: #ffffff;
-}
+    .sobre-nosotros-link .nav-link:hover {
+      background-color: #0056b3;
+      color: #ffffff;
+    }
 
- .navbar-brand img {
-  height: 40px;
-}
+    .navbar-brand img {
+      height: 40px;
+    }
 
-nav ul.nav {
-  margin-top: 2rem;
-  padding: 0;
-  list-style: none;
-}
+    nav ul.nav {
+      margin-top: 2rem;
+      padding: 0;
+      list-style: none;
+    }
 
-nav ul.nav .nav-link {
-  font-weight: 600;
-  color: white;
-  margin: 0 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
+    nav ul.nav .nav-link {
+      font-weight: 600;
+      color: white;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
 
-nav ul.nav .nav-link:hover,
-nav ul.nav .nav-link:focus {
-  background-color: #0d6efd;
-  color: white;
-  text-decoration: none;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    nav ul.nav .nav-link:hover,
+    nav ul.nav .nav-link:focus {
+      background-color: #0d6efd;
+      color: white;
+      text-decoration: none;
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
 
-.oci{
- background-image: url('bolerea.jpeg');
-      background-size: cover;         
-      background-position: center;   
-      background-repeat: no-repeat;   
-      height: 100vh;                
-      margin: 0;
-}
+    /* La clase 'oci' ya no es necesaria en el body, se eliminan los estilos redundantes */
+    .oci {
+      /* Estos estilos se han movido directamente al body para aplicar el fondo a toda la página */
+    }
 
-h5{
-  color: white;
-}
-
-
+    h5 {
+      color: white;
+    }
   </style>
 </head>
-<body class="oci">
+<body>
 
-<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-     <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
+       <a class="navbar-brand" href="index.html"><img src="logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -121,14 +124,14 @@ h5{
 <br>
 <br>
 
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a class="nav-link" href="#1">Moda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#2">Motor</a></li>
-        <li class="nav-item"><a class="nav-link" href="#3">Belleza</a></li>
-      </ul>
-    </nav>
-  </div>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link" href="#1">Moda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#2">Motor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#3">Belleza</a></li>
+        </ul>
+      </nav>
+    </div>
 <p id="1"></p>
 
 <main class="container py-5">
@@ -137,9 +140,7 @@ h5{
 <h5><strong>MODA</strong></h5>
 
 <br>
-  <!-- MODA -->
-   
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card h-100 text-center">
         <img src="zara.png" data-bs-toggle="modal" data-bs-target="#zara" class="card-img-top p-3" alt="Zara" style="height: 200px; object-fit: contain;">
@@ -171,9 +172,7 @@ h5{
     <p id="2"></p>
 <br>
 <br>
-  <!-- MOTOR -->
- 
-<h5><strong>MOTOR</strong></h5>
+    <h5><strong>MOTOR</strong></h5>
 
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
     <div class="col">
@@ -204,12 +203,11 @@ h5{
     </div>
   </div>
 
-  <!-- BELLEZA -->
-<p id="3"></p>
-  <br>
-  <br>
+    <p id="3"></p>
+    <br>
+    <br>
 
-  
+    
 <h5><strong>BELLEZA</strong></h5>
 
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
@@ -243,7 +241,6 @@ h5{
 
 </main>
 
-<!-- MODAL -->
 <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content text-center">
@@ -261,24 +258,13 @@ h5{
   </div>
 </div>
 
-<footer>
-  <hr>
-  <p>&copy; 2025 X-Madrid. Esta es una página informativa no oficial.</p>
-  <p><i class="bi bi-exclamation-circle-fill"></i> Todos los logos pertenecen a sus respectivas marcas.</p>
-  <button class="btn btn-sm btn-outline-secondary mt-2" data-bs-toggle="modal" data-bs-target="#infoModal">
-    <i class="bi bi-info-circle"></i> Más información
-  </button>
-</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
 
-
-<!-- Modals -->
-
-<!--Zara-->
 
 <div class="modal fade" id="zara" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -295,8 +281,6 @@ h5{
       </div>
     </div>
   </div>
-
-<!--Rituals-->
 
 <div class="modal fade" id="rituals" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -315,8 +299,6 @@ h5{
   </div>
 
 
-<!--Kiko Milano-->
-
 <div class="modal fade" id="kiko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
@@ -334,9 +316,7 @@ h5{
   </div>
 
 
-  <!--Kiko Milano-->
-
-<div class="modal fade" id="kiko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal fade" id="kiko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -353,11 +333,7 @@ h5{
   </div>
 
 
-  <!--Harley-->
-
-
-
-<div class="modal fade" id="harley" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal fade" id="harley" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -374,9 +350,7 @@ h5{
   </div>
 
 
-  <!--ByD-->
-
-<div class="modal fade" id="byd" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal fade" id="byd" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -393,9 +367,7 @@ h5{
   </div>
 
 
-   <!--Ducati-->
-
-<div class="modal fade" id="ducati" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+      <div class="modal fade" id="ducati" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -406,6 +378,57 @@ h5{
           <img src="ducati2.jpg" class="img-fluid mb-3" alt="Rituals"/>
           <p>Elige la Ducati perfecta para ti. Configúrala según tu estilo </p>
           <a href="https://www.ducati.com/es/es/home?utm_source=google&utm_medium=paid-search&utm_campaign=ES_Ducati_Range_AWON_GoogleSearch_LOW_PureBrand_CONV_PHD202501998976&utm_source=google&utm_medium=paid-search&utm_content=ducati&utm:campaign=ES-Ducati-PureBrand-Range-AWON-PHD202501998976&gad_source=1&gad_campaignid=21163846942&gbraid=0AAAAADPmJghXV2KDJiyZU2G_iebxQi0OC&gclid=CjwKCAjw_pDBBhBMEiwAmY02Ng4m0kngr4u_71kyC2o-u-EoMsPo_QN2S8xgh9iW6k6aBa__ad2cThoCGvYQAvD_BwE" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <div class="modal fade" id="druni" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Ducati</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="druni.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Druni, como distribuidor oficial, te ofrece más de 15.000 productos originales de perfumería femenina y masculina, colonias y fragancias para niños.  </p>
+          <a href="https://www.druni.es/?srsltid=AfmBOorFJ5XGwRfiEhP3UJDNyx7J4Bm-dVf7LgZJpl8_i0FP4TmPCmzZ" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="modal fade" id="lashes" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Ducati</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="lashes1.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Esta consiste en colocar una o varias extensiones de pestaña por cada una de tus pestañas naturales hasta completar el 100% de todas ellas. </p>
+          <a href="https://lashesandgo.com/" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <div class="modal fade" id="kenko" tabindex="-1" aria-labelledby="modalMontaditosLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMontaditosLabel">Ducati</h5>
+          
+        </div>
+        <div class="modal-body">
+          <img src="lashes1.jpg" class="img-fluid mb-3" alt="Rituals"/>
+          <p>Uno de los mejores sitios para disfrutar del buen sushi </p>
+          <a href="https://www.sushishop.eu/es/catalogo-productos/coleccion-kenko/" target="_blank" class="btn btn-outline-primary">Sitio oficial</a>
         </div>
       </div>
     </div>
