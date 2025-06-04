@@ -43,6 +43,13 @@
       z-index: 9999;
       list-style: none;
     }
+    .modal-body img {
+  display: block;            /* Para que funcione margin auto */
+  margin: 0 auto 20px auto;  /* Centrado horizontal y espacio abajo */
+  width: 400px;              /* Tamaño fijo (puedes ajustar) */
+  height: auto;              /* Mantiene proporción */
+  max-width: 100%;           /* Evita que se salga del modal en pantallas pequeñas */
+}
 
     .sobre-nosotros-link .nav-link {
       background-color: grey;
